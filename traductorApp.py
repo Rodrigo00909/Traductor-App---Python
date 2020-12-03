@@ -13,11 +13,11 @@ def translate(w):
         if yn == "Y":
             return data[get_close_matches(w, data.keys())[0]]
         elif yn == "N":
-            return "La palabra no existe. Intente denuevo."
+            return "La palabra no existe. Intente otra vez."
         else:
             return "No logramos entender tu palabra."
     else:
-        return "La palabra no existe. Intente denuevo."
+        return "La palabra no existe. Intente otra vez."
 
 print('Hola!')
 word = input("Escriba una palabra(en inglés): ")
